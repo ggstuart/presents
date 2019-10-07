@@ -38,7 +38,8 @@
 	.share-reveal,
 	.state-background,
 	.reveal .progress,
-	.reveal .backgrounds {
+	.reveal .backgrounds,
+	.reveal .slide-number {
 		display: none !important;
 	}
 
@@ -54,7 +55,7 @@
 	   Differentiate your headings from your body text.
 	   Perhaps use a large sans-serif for distinction. */
 	h1,h2,h3,h4,h5,h6 {
-		color: #000 !important;
+		color: #000!important;
 		height: auto;
 		line-height: normal;
 		font-family: Georgia, "Times New Roman", Times, serif !important;
