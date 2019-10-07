@@ -1,0 +1,72 @@
+/* code { color: #9f9; } */
+/* .reveal li { padding-top: .5em; } */
+.reveal strong,
+.reveal table th { color: #5fabfc}
+a:link { border-bottom: 2px solid #666; }
+.reveal pre { margin: .5em 0; }
+.reveal pre code {
+  font-size: 1.25em;
+  padding: .25em 2px .25em .5em;
+  line-height: 1.25em;
+  max-height: 436px;
+}
+.reveal li code { color: #9f9; font-size: 1em }
+.reveal p code,
+.reveal table code { color: #9f9; }
+.left-align { text-align: left; }
+.reveal h1 { line-height: 1em; }
+.reveal ul { margin-bottom: .5em; }
+.reveal li { padding-top: .15em; }
+.reveal blockquote {
+  text-align: left;
+  width: 100%;
+  padding: .25em 1.5em .5em;
+}
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, .25);
+  border: none;
+  box-shadow: none;
+}
+.reveal .smallimg img {
+  width: 50%;
+}
+.reveal .paddedimg img {
+  padding: 0 20px;
+}
+button,
+.ref-links a { font-size: .75em; }
+.crammed ul,
+.crammed ol,
+.crammed p,
+.smallcode pre code { font-size: .9em; }
+.midcode pre code { font-size: 1.05em; }
+.reveal .smalltext p,
+.reveal .smalltext ul,
+.reveal .smalltext table { font-size: .75em; }
+.reveal .smallhead h1 { font-size: 3em; margin: 0; }
+.reveal .small-subheads h2 { font-size: 1.25em; margin: 0; }
+.reveal .small-subheads ul { padding-top: 0; }
+.reveal p small { font-size: 60% !important; }
+.slides button,
+.slides .ext-links a[title^="ext:"]:after {
+  position: relative;
+  text-decoration: none;
+  font: .75em "FontAwesome";
+  content: "\f08e";
+  bottom: .25em;
+}
+.small-table table {
+  font-size: .58em;
+}
+.float-l {
+  float: left;
+}
+.float-r {
+  float: right;
+}
+.float-l-img p img {
+  float: left;
+  margin-right: 1em;
+  margin-top: 0;
+}
