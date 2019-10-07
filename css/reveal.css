@@ -229,7 +229,7 @@ body {
   left: auto;
   z-index: 1;
   color: #000;
-  /* pointer-events: none; */
+  pointer-events: none;
   font-size: 10px; }
   .reveal .controls button {
     position: absolute;
@@ -481,7 +481,7 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  /* pointer-events: none; */
+  pointer-events: none;
   overflow: visible;
   z-index: 1;
   text-align: center;
