@@ -13,6 +13,8 @@ a:link { border-bottom: 2px solid #666; }
 .reveal li code { color: #9f9; font-size: 1em }
 .reveal p code,
 .reveal table code { color: #9f9; }
+.reveal .controls { color: #9f9; }
+.reveal .slides { pointer-events: all; }
 .left-align { text-align: left; }
 .reveal h1 { line-height: 1em; }
 .reveal ul { margin-bottom: .5em; }
