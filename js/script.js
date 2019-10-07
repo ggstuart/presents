@@ -2,7 +2,7 @@
 const queryString = location.search;
 console.log(queryString);
 
-const regex = /(?<user>[\w]+)-(?<repo>[\S]+)-(?<file>[\S]+)/g;
+const regex = /(?<user>[\w]+)_(?<repo>[\S]+)_(?<file>[\S]+)/g;
 const match = regex.exec(queryString);
 console.log(match.groups);
 
