@@ -16,30 +16,27 @@
     <link rel="stylesheet" href="lib/css/zenburn.css">
     <link rel="stylesheet" href="css/deveritt-reveal.css">
 
-		<!-- Printing and PDF exports -->
+    <!-- Printing and PDF exports -->
 		<script>
-			let link = document.createElement('link');
+			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName('head')[0].appendChild(link);
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
         <!-- external slides will be added here by javascript via url params -->
-				<h1>Fania presents</h1>
-        <p>
-        To run call: <br>
-        <code>https://fania.github.io/presents?USER_REPO_FILE</code>
-        </p>
-        <p>
-        Individual slides can be called by<br>
-        adding <code>#/NUMBER</code> at the end of the url, e.g.<br><br>
-        <a href="https://fania.github.io/presents?fania_presents_demo#/1">https://fania.github.io/presents?fania_presents_demo#/1</a>
-        </p>
-        <p>Press <code>o</code> to see the slide overview.</p>
+				<h2>Fania presents</h2>
+        <ul>
+          <li><code>https://fania.github.io/presents?USER_REPO_FILE</code></li>
+          <li>individual slides can be called by adding <code>#/NUMBER</code> at the end of the url, e.g. <a href="https://fania.github.io/presents?fania_presents_demo#/1">https://fania.github.io/presents?fania_presents_demo#/1</a></li>
+          <li>press <code>o</code> to see the slide overview</li>
+          <li>press <code>f</code> to enable fullscreen</li>
+        </ul>
+        <p>This project uses <a href="https://revealjs.com">reveal.js</a>.</p>
 			</div>
 		</div>
 
