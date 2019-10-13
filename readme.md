@@ -7,27 +7,11 @@ To run call ```https://fania.github.io/presents/?USER_REPO_FILE```.
 Individual slides can be called by adding ```#/NUMBER``` at the end of the url, e.g. ```https://fania.github.io/presents/?USER_REPO_FILE#/6```.
 
 
-## Markdown Rules
+## How to
 
-**Horizontal slide seperator**:  
-(newline + --- + newline)  
-
-```
-
----
-
-```
-
-**Vertical slide seperator**: 
-(newline + newline)  
-
-```
+See [instructions](https://fania.github.io/presents).
 
 
-```
+## Demo
 
-
-## Presentation Rules
-
-**Slide overview**: press `o`
-
+See [demo presentation](https://fania.github.io/presents/?fania_presents_demo).
