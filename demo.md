@@ -4,14 +4,12 @@ A presentation by [Fania](https://fania.uk).
 
 ---
 
-## Images
-
-**relative**
+## Images **relative**
 
 ![alt](imgs/technokitten.jpg)
 
 
-**absolute**
+## Images **absolute**
 
 ![alt](https://fania.eu/images/gallery/2015/2015_cats_001.png)
 
@@ -19,12 +17,12 @@ A presentation by [Fania](https://fania.uk).
 
 ## Demo Code
 
-```
-console.log("hello world");
+```html
+<p>hello world</p>
 ```
 
 
-```
+```javascript
 console.log("k thx bye");
 ```
 
