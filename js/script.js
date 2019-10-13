@@ -1,6 +1,6 @@
 
 const queryString = location.search;
-console.log(queryString);
+// console.log(queryString);
 // console.log(location);
 
 const rgx = /([a-zA-Z\-0-9]+)/g;
@@ -8,7 +8,6 @@ const rgx = /([a-zA-Z\-0-9]+)/g;
 // const match = regex.exec(queryString);
 const match = queryString.match(rgx);
 // console.log(match);
-console.log(match);
 
 if(match) {
 
