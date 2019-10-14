@@ -36,7 +36,7 @@ console.log("k thx bye");
 ## Background Gradient
 
 
-<!-- .slide: data-background-iframe="https://fania.github.io/trains/" -->
+<!-- .slide: data-background-iframe="https://fania.github.io/trains/" data-background-position="center" -->
 ## Background Iframe
 
 ---
