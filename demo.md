@@ -28,7 +28,7 @@ console.log("k thx bye");
 
 ---
 
-<!-- .slide: data-background-image:"https://raw.githubusercontent.com/Fania/presents/master/imgs/magicsquares.png" data-background-size:"contain" -->
+<!-- .slide: data-background-image="https://raw.githubusercontent.com/Fania/presents/master/imgs/magicsquares.png" data-background-size="contain" -->
 ## Background Image
 
 
