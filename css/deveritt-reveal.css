@@ -78,7 +78,7 @@ button,
 }
 
 .gradient {
-  background: radial-gradient(center, circle cover, #00637c 0%, #002b36 100%);
+  background: linear-gradient(45deg, #00637c 0%, #002b36 100%);
 }
 
 @media print {
