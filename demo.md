@@ -29,7 +29,7 @@ console.log("k thx bye");
 ---
 
 ## Background Image
-<!-- .slide: data-background:"https://raw.githubusercontent.com/Fania/presents/master/imgs/magicsquares.png" data-background-size:"contain" -->
+<!-- .slide: data-background-image:"https://raw.githubusercontent.com/Fania/presents/master/imgs/magicsquares.png" data-background-size:"contain" -->
 
 
 ## Background Gradient
