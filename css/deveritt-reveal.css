@@ -1,5 +1,7 @@
 /* code { color: #9f9; } */
 /* .reveal li { padding-top: .5em; } */
+.nomargin { margin: 0; }
+.nopadding { padding: 0; }
 .reveal strong,
 .reveal table th { color: #5fabfc}
 a:link { border-bottom: 2px solid #666; }
