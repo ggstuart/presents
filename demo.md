@@ -28,6 +28,24 @@ console.log("k thx bye");
 
 ---
 
+## Background Image
+
+<!-- data-background:"imgs/magicsqaures.png" 
+     data-background-size:"contain" -->
+
+
+## Background Gradient
+
+<!-- .slide: class="gradient" -->
+
+
+## Background Iframe
+
+<!-- data-background-iframe="https://dr.physics.wtf"  
+     data-background-interactive -->
+
+---
+
 ## Goodbye
 
 <3
