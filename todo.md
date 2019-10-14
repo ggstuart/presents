@@ -1,4 +1,0 @@
-# Stuff to fix
-
-- [ ] fix markdown utf-8 chars
-- [ ] allow multiple markdown files in one presentation
