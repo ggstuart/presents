@@ -111,6 +111,9 @@
         // maxScale: 0.82,
         previewLinks: false,
         transition: 'slide', // none/fade/slide/convex/concave/zoom
+        markdown: {
+          smartypants: true
+        },
         dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },

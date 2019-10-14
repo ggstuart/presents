@@ -25,7 +25,7 @@ if(match) {
   <section data-markdown="${url}"
           data-separator-vertical="^\n\n"
           data-separator-notes="^Note:"
-          data-charset="iso-8859-15">
+          data-charset="utf-8">
   </section>
   `;
 
