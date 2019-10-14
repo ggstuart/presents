@@ -28,16 +28,16 @@ console.log("k thx bye");
 
 ---
 
-## Background Image
 <!-- .slide: data-background-image:"https://raw.githubusercontent.com/Fania/presents/master/imgs/magicsquares.png" data-background-size:"contain" -->
+## Background Image
 
 
-## Background Gradient
 <!-- .slide: class="gradient" -->
+## Background Gradient
 
 
+<!-- .slide: data-background-iframe="https://fania.github.io/trains/" -->
 ## Background Iframe
-<!-- .slide: data-background-iframe="https://dr.physics.wtf" data-background-interactive -->
 
 ---
 
