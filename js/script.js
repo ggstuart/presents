@@ -23,12 +23,22 @@ if(match) {
   const slides = document.querySelector(".slides");
   slides.innerHTML = `
   <section data-markdown="${url}"
-          data-separator-vertical="^\n\n"
-          data-separator-notes="^Note:"
-          data-charset="utf-8">
+           data-separator-vertical="^\n\n"
+           data-separator-notes="^Note:"
+           data-charset="utf-8">
   </section>
   `;
 
   const title = document.querySelector("title");
   title.innerHTML = `${match[1]} ${match[2]}`;
 }
+
+// for testing
+const slides = document.querySelector(".slides");
+slides.innerHTML = `
+<section data-markdown="demo.md"
+         data-separator-vertical="^\n\n"
+         data-separator-notes="^Note:"
+         data-charset="utf-8">
+</section>
+`;
