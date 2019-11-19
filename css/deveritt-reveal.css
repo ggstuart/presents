@@ -90,6 +90,32 @@ button,
 }
 
 
+pre {
+  position: relative;
+}
+code[class*='language-']::after {
+  position: absolute;
+  right: 1em;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.24);
+  font-size: 2em;
+  font-weight: bold;
+}
+code[class*='language-css']::after   {
+  content: "CSS";
+}
+code[class*='language-html']::after   {
+  content: "HTML";
+}
+code[class*='language-js']::after   {
+  content: "JS";
+}
+
+
+
 @media print {
   a[href]:after {
     content: " (" attr(href) ")";
