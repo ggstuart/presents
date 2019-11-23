@@ -115,6 +115,10 @@ code[class*='language-js']::after   {
 }
 
 
+.table table {
+  font-size: .75em;
+}
+
 
 @media print {
   a[href]:after {
