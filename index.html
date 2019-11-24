@@ -109,48 +109,44 @@
           </dl>
         </section>
 
-        <section data-markdown=""
-            data-separator-vertical="^\n\n"
-            data-separator-notes="^Note:"
-            data-charset="utf-8">
-        </section>
 			</div>
 
 		</div>
 
 		<script src="js/reveal.js"></script>
-    <!-- <script src="js/script.js"></script> -->
-    <script src="js/mix.js"></script>
     
 
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				history: true,
-        controls: true,
-        progress: true,
-        center: true,
-        touch: true,
-        keyboard: true,
-        // maxScale: 0.82,
-        previewLinks: false,
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
-        markdown: {
-          smartypants: true
-        },
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true }
-          // { src: 'plugin/menu/menu.js'}
-        ]
-			});
+      function delayed_init() {
+        Reveal.initialize({
+          history: true,
+          controls: true,
+          progress: true,
+          center: true,
+          touch: true,
+          keyboard: true,
+          // maxScale: 0.82,
+          previewLinks: false,
+          transition: 'slide', // none/fade/slide/convex/concave/zoom
+          markdown: {
+            smartypants: true
+          },
+          dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true },
+            { src: 'plugin/notes/notes.js', async: true }
+            // { src: 'plugin/menu/menu.js'}
+          ]
+        });
+      }
 		</script>
+    <script src="js/mix.js"></script>
     <!-- <script>$(".btn").RevealEditor();</script> -->
 	</body>
 </html>

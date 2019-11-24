@@ -31,6 +31,7 @@ if(match) {
 
   const title = document.querySelector("title");
   title.innerHTML = `${match[1]} ${match[2]}`;
+
 }
 
 // for testing
