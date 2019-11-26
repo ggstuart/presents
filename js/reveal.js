@@ -5298,8 +5298,8 @@
 		if( triggered ) {
 			event.preventDefault && event.preventDefault();
 		}
-		// ESC or O key
-		else if ( ( keyCode === 27 || keyCode === 79 ) && features.transforms3d ) {
+		// ESC or O key or ENTER
+		else if ( ( keyCode === 27 || keyCode === 79 || keyCode === 13 ) && features.transforms3d ) {
 			if( dom.overlay ) {
 				closeOverlay();
 			}
