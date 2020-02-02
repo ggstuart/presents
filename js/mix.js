@@ -75,3 +75,12 @@ function loadMultiple(text) {
   const title = document.querySelector("title");
   title.innerHTML = `CTEC3905`;
 }
+
+
+// function handleImagePaths() {
+//   const images = document.querySelectorAll(".slides img");
+//   images.forEach(image => {
+//     const name = image.attributes.src.value;
+//     image.src = `https://raw.githubusercontent.com/front-end-materials/images/master/${name}`;
+//   });
+// }

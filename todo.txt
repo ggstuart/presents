@@ -3,8 +3,8 @@
 
 - [x] fix markdown utf-8 chars
 - [x] allow multiple markdown files in one presentation
+- [x] make it so we don't need _mix parameter
 - [ ] external slides https://github.com/janschoepke/reveal_external
 - [ ] live editor https://github.com/ctangel/RevealEditor
 
 
-- [ ] make it so we don't need _mix parameter

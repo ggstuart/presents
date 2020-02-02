@@ -16,7 +16,8 @@
     <!-- <link rel="stylesheet" href="plugin/editor/style.css"> -->
     <link rel="stylesheet" href="css/theme/moon.css">
     <link rel="stylesheet" href="lib/css/dracula.css">
-    <link rel="stylesheet" href="css/deveritt-reveal.css">
+    <!-- <link rel="stylesheet" href="css/deveritt-reveal.css"> -->
+    <link rel="stylesheet" href="css/ctec3905.css">
 
     <!-- Printing and PDF exports -->
 		<script>
@@ -44,10 +45,10 @@
 
 		<div class="reveal">
 
-			<div class="slides">
+			<main class="slides">
         <!-- external slides will be added here by javascript via url params -->
 
-        <section>				
+        <!-- <section>				
           <h2>CTEC3905 presents</h2>
           <p><code>CTEC3905.github.io/presents</code> + <br> 
              <code>?USER_REPO_FILE</code></p>
@@ -125,9 +126,9 @@
             <br>(e.g. <a href="https://CTEC3905.github.io/presents?fania_presents_multiple_print-pdf">?fania_presents_multiple_print-pdf</a>)</dd>
             <dd>and then same as above</dd>
           </dl>
-        </section>
+        </section> -->
 
-			</div>
+			</main>
 
 		</div>
 
@@ -144,13 +145,15 @@
           controls: true,
           progress: true,
           center: true,
+          overview: true,
           touch: true,
           keyboard: true,
           // maxScale: 0.82,
-          previewLinks: false,
+          previewLinks: true,
           transition: 'slide', // none/fade/slide/convex/concave/zoom
           markdown: {
-            smartypants: true
+            smartypants: true,
+            baseUrl: "https://raw.githubusercontent.com/front-end-materials/images/master/"
           },
           dependencies: [
             { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -163,14 +166,12 @@
           ]
         });
 
-        Reveal.addEventListener( 'ready', handleImagePaths );
+        // Reveal.addEventListener( 'ready', handleImagePaths );
 
       }
       // console.log(Reveal.getConfig());
 		</script>
     <script src="js/mix.js"></script>
-    <script src="js/images.js"></script>
-    <!-- <script src="js/script.js"></script> -->
     <!-- <script>$(".btn").RevealEditor();</script> -->
 	</body>
 </html>
