@@ -35,7 +35,7 @@
 
 /* OLD STYLES */
 
-.reveal pre { margin: .5em 0; }
+.reveal pre { margin: .5em 0; width: 100%; }
 .reveal pre code {
   font-size: 1.25em;
   padding: .25em 2px .25em .5em;
@@ -75,6 +75,7 @@ button,
 .reveal .smalltext p,
 .reveal .smalltext ul,
 .reveal .smalltext table { font-size: .75em; }
+.reveal .smalltext blockquote { font-size: 1em; }
 .reveal .smallhead h1 { font-size: 3em; margin: 0; }
 .reveal .small-subheads h2 { font-size: 1.25em; margin: 0; }
 .reveal .small-subheads ul { padding-top: 0; }
@@ -110,3 +111,42 @@ button,
   content: "\f08e";
   bottom: 0.25em;
 } */
+
+pre {
+  position: relative;
+}
+code[class*='language-']::after {
+  position: absolute;
+  right: 1em;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.24);
+  font-size: 2em;
+  font-weight: bold;
+}
+code[class*='language-css']::after   {
+  content: "CSS";
+}
+code[class*='language-html']::after   {
+  content: "HTML";
+}
+code[class*='language-js']::after,
+code[class*='language-javascript']::after   {
+  content: "JS";
+}
+
+
+.table table {
+  font-size: .75em;
+}
+
+
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: .5em;
+  }
+  a:link { border-bottom: none; }
+}
