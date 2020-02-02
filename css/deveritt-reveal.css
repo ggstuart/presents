@@ -20,6 +20,7 @@ a:link { border-bottom: 2px solid #666; }
 .reveal .controls { color: #9f9; }
 .reveal .slides { pointer-events: all; }
 .left-align { text-align: left; }
+.centered { text-align: center; }
 .reveal h1 { line-height: 1em; }
 .reveal ul { margin-bottom: .5em; }
 .reveal li { padding-top: .15em; }
