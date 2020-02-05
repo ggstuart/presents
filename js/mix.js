@@ -10,18 +10,10 @@ const rgx = /([a-zA-Z\-0-9\/]+)/g;
 const match = queryString.match(rgx);
 // console.log(match);
 
+const slides = document.querySelector(".slides");
+
 if (match === null) {
-  // for testing
-  const slides = document.querySelector(".slides");
-  slides.innerHTML = `
-  <section data-markdown="test.md"
-    data-separator="^==="
-    data-separator-vertical="^---"
-    data-separator-notes="^Note:"
-    data-charset="utf-8">
-  </section>
-  `;
-  // end testing
+  loadSingle('test file', 'test.md');
   delayed_init();  // run default presentation from index.html
 } else {
   const url = `https://raw.githubusercontent.com/CTEC3905/lectures/master/${match[0]}.md`;
@@ -31,7 +23,7 @@ if (match === null) {
       return response.text();
     })
     .then(function(text) {
-      text.startsWith("# Contents") ? loadMultiple(text) : loadSingle();
+      text.startsWith("# Contents") ? loadMultiple(text) : loadSingle(match[0], url);
       delayed_init();
     })
     .catch(function(err) {
@@ -39,43 +31,32 @@ if (match === null) {
     });
 }
 
-function loadSingle() {
-  const url = `https://raw.githubusercontent.com/CTEC3905/lectures/master/${match[0]}.md`;
-  const slides = document.querySelector(".slides");
-  slides.innerHTML = `
-    <section data-markdown="${url}"
-            data-separator="^==="
-            data-separator-vertical="^---"
-            data-separator-notes="^Note:"
-            data-charset="utf-8">
-    </section>
-  `;
-  const title = document.querySelector("title");
-  title.innerHTML = `${match[0]} CTEC3905`;
+function loadSingle(title, path) {
+  slides.appendChild(markdownSection(path))
+  document.querySelector("title").innerHTML = `${title} CTEC3905`;
 }
-
 
 function loadMultiple(text) {
   let lines = text.trim().split("\n").splice(2); 
-  const slides = document.querySelector(".slides");
-  slides.innerHTML = "";  // remove default presentation
   lines.forEach(line => {
     let cleanedLine = line.trim();
     let details = cleanedLine.split(" ");
     const url = `https://raw.githubusercontent.com/CTEC3905/lectures/master/${details[0]}.md`;
-    slides.innerHTML += `
-      <section data-markdown="${url}"
-              data-separator="^==="
-              data-separator-vertical="^---"
-              data-separator-notes="^Note:"
-              data-charset="utf-8">
-      </section>
-    `;
+    slides.appendChild(markdownSection(url))
   });
   const title = document.querySelector("title");
   title.innerHTML = `CTEC3905`;
 }
 
+function markdownSection(path) {
+  const section = document.createElement("section");
+  section.setAttribute("data-markdown", path);
+  section.setAttribute("data-separator", "^===");
+  section.setAttribute("data-separator-vertical", "^---");
+  section.setAttribute("data-separator-notes", "^Note:");
+  section.setAttribute("data-charset", "utf-8");
+  return section;
+}
 
 // function handleImagePaths() {
 //   const images = document.querySelectorAll(".slides img");
