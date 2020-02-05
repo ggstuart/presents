@@ -1,3 +1,5 @@
+let repo = "https://raw.githubusercontent.com/ggstuart/discourse-analysis.wiki/master"
+
 let queryString = location.search;
 
 if (location.search.includes("%2F")) {
@@ -9,22 +11,18 @@ const rgx = /([a-zA-Z\-0-9\/]+)/g;
 const match = queryString.match(rgx);
 const slides = document.querySelector(".slides");
 
-const url = (match === null) ? 'test.md' : `https://raw.githubusercontent.com/CTEC3905/lectures/master/${match[0]}.md`;
+const url = (match === null) ? 'test.md' : `${repo}/${match[0]}.md`;
 const title = (match === null) ? 'test file' : match[0];
 
-if (match === null) {
-  loadSingle('test file', 'test.md');
-  delayed_init();  // run default presentation from index.html
-} else {
-  fetch(url).then(function(response) {
-    return response.text();
-  }).then(function(text) {
-    text.startsWith("# Contents") ? loadMultiple(text) : loadSingle(match[0], url);
-    delayed_init();
-  }).catch(function(err) {
-    console.log("Fetch Error: ", err);
-  });
-}
+fetch(url).then(function(response) {
+  return response.text();
+}).then(function(text) {
+  text.startsWith("# Contents") ? loadMultiple(text) : loadSingle(title, url);
+  delayed_init();
+}).catch(function(err) {
+  console.log("Fetch Error: ", err);
+});
+
 
 function loadSingle(title, path) {
   slides.appendChild(markdownSection(path))
@@ -32,11 +30,11 @@ function loadSingle(title, path) {
 }
 
 function loadMultiple(text) {
-  let lines = text.trim().split("\n").splice(2);
+  let lines = text.trim().split("\n").slice(1);
   lines.forEach(line => {
-    let cleanedLine = line.trim();
-    let details = cleanedLine.split(" ");
-    const url = `https://raw.githubusercontent.com/CTEC3905/lectures/master/${details[0]}.md`;
+    let details = line.trim().split(" ");
+    console.log(details);
+    const url = `https://raw.githubusercontent.com/${details[0]}/${details[1]}/master/${details[2]}.md`;
     slides.appendChild(markdownSection(url))
   });
   document.querySelector("title").innerHTML = "CTEC3905";
